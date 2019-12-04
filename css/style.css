@@ -82,6 +82,8 @@ h6 {
   background: #fff;
 }
 
+#more {display: none;}
+
 #preloader:before {
   content: "";
   position: fixed;
