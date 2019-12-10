@@ -1273,6 +1273,12 @@ body.mobile-nav-active #mobile-nav-toggle {
   margin-bottom: 20px;
   text-align: center;
 }
+#contact .contact-info i {
+  font-size: 48px;
+  display: inline-block;
+  margin-bottom: 10px;
+  color: #18d26e;
+}
 
 
 #contact .google-maps {
