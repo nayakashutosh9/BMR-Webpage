@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-image: url('img/team_background.jpg');
+  font-family: Arial;
+}
+
+
+
+.header {
+  text-align: center;
+  padding: 32px;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 2px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column_left, .column_right {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%; 
+  max-width: 50%;
+  padding: 4px 4px 0 4px;
+}
+
+.column_left img{
+  vertical-align: middle;
+  width: 100%;
+}
+.column_right img{
+   vertical-align: middle;
+  width: 100%; 
+}
+
+.end_image{
+  max-width: 50%;
+  padding: 0;
+  display: block;
+  margin-left: auto;
+  margin-top: 0;
+  margin-right: auto;
+
+}
+
+.end_image img{
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns 
+@media screen and (max-width: 800px) {
+  .column {
+    -ms-flex: 50%;
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+*/
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1000px) {
+  .column_left{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: 0 .8em 0 0;
+  }
+  .column_right{
+    -ms-flex: 100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: 0 0 0 .8em;
+  }
+  .end_image{
+    -ms-flex:100%;
+    flex: 100%;
+    max-width: 100%;
+    margin: 0 1.2em 0 1em;
+  }
+}

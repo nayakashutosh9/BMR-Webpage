@@ -1,0 +1,58 @@
+
+.main_content{
+	clear: initial;
+}
+.horizontal_tiles{
+    margin: 8px 0 0 15px;
+		position: relative;
+		width: 100%;
+}
+
+/*.image_tiles{
+	 position: relative; width: 100%; 
+}*/
+
+.text_tiles {
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  position: absolute;
+  top: 85%;
+  left: 75%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.horizontal_tiles:hover .overlay_tiles {
+  bottom: 0;
+  height: 100%;
+}
+
+.overlay_tiles {
+  position: absolute;
+  bottom: 100%;
+  left: 0;  
+  opacity: 0.5;
+  right: 0;
+  background-color: #000;
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+
+.parallax_1 {
+  /* The image used   background-image: url("img/back_1.jpg");*/
+  background-color: black;
+  width: 100%;
+
+
+  /* Set a specific height*/ 
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
